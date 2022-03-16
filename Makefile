@@ -16,7 +16,8 @@ TARGETARCH ?= amd64
 
 UIDIR=ui
 NPMINSTALL=npm i
-NPMBUILD=npm run-script build
+# NPMBUILD=npm run-script build
+NPMBUILD=npm run build
 
 KOKOLDFLAGS+=-X 'main.Buildstamp=$(BuildTime)'
 KOKOLDFLAGS+=-X 'main.Githash=$(COMMIT)'
